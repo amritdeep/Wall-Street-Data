@@ -1,5 +1,6 @@
 require "open-uri"
 require "nokogiri"
+require "csv"	
 require "pry"
 
 # wsj_url = "http://www.wsj.com/"
@@ -29,7 +30,7 @@ zonedModule.each do |zone|
 			data.each do |data|
 				# binding.pry
 				t = data.text.strip
-				array << t
+				# array << t
 			end
 		end
 	end
