@@ -20,6 +20,8 @@ CSV.open("stock.csv", "wb") do |csv|
 
 		# For Today stock only
 		today = stock.css('table').css('tbody').css('tr')
+		csv << ["Name", "Current", "Today Change stock", "Today Percentage Change stock"]
+
 		today.each do |today|
 			
 			begin
